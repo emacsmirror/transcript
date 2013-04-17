@@ -1,0 +1,4 @@
+
+* TODO [#A] Clean up the keyboard shortcuts for insertion (so that they work)
+
+* TODO [#C] Create some system to input a name from a list to allow for easier multiple respondents

@@ -1,8 +1,8 @@
 ;;; transcript.el --- edit transcripts of sound recordings
 
-;; Author: Kilian A. Foth <foth@informatik.uni-hamburg.de>
+;; Authors: Kilian A. Foth <foth@informatik.uni-hamburg.de>, Nathanael Farley <nasfarley88@gmail.com>
 ;; Created: 10. Jul 2001
-;; Version: 0.4
+;; Version: 0.4.1
 ;; Keywords: editing, playback
 
 ;; This file is not part of anything larger than itself.
@@ -769,7 +769,7 @@ The exact command to send is decoded from the current `tm-protocol'."
   "List of dialogue attributions already used.")
 (make-variable-buffer-local 'tm-attributions)
 
-(defvar tm-attribution-regexp "^[a-z0-9 ]+: "
+(defvar tm-attribution-regexp "^[A-Za-z0-9 ]+: "
   "Regexp for recognizing dialogue attributions.")
 
 (defun tm-insert-attribution ()

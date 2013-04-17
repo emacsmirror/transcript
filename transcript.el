@@ -45,8 +45,8 @@
 (require 'derived)
 
 
-;; (defvar tm-keys
-;;   '(([insert]           . tm-play)
+(defvar tm-keys
+   '(;([insert]           . tm-play)
 ;;     ([delete]           . tm-rewind)
 ;;     ([home]             . tm-home)
 ;;     ([end]              . tm-end)
@@ -63,9 +63,9 @@
 ;;     ([kp-right]         . tm-right-channel)
 ;;     ([kp-add]           . tm-raise-volume)
 ;;     ([kp-subtract]      . tm-lower-volume)
-;;     ([(control return)] . tm-insert-attribution)
+     ([(control ?j)] . tm-insert-attribution)
 ;;     ([?8]               . tm-stress-last-word)
-;;     ([(control ?.)]     . tm-insert-ellipsis)))
+     ([(control ?.)]     . tm-insert-ellipsis)))
 
 
 (defun make-time-float (list)
@@ -74,10 +74,10 @@
 
 (defvar last-mode-line-update (make-time-float (current-time)))
 
-(defvar tm-keys
-  '(
-    ([insert]           . tm-play)
-    ))
+;; (defvar tm-keys
+;;   '(
+;;     ([insert]           . tm-play)
+;;     ))
 
 (define-derived-mode transcript-mode text-mode "Transcript"
   "Major mode for editing dialogue transcripts."
